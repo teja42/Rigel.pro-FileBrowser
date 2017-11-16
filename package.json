@@ -1,0 +1,26 @@
+{
+  "name": "rigel",
+  "version": "1.0.0",
+  "description": "Cross Platform Disk Encryption Software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec \" electron .\" --watch \"index.js\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uv404/Rigel.git"
+  },
+  "keywords": [
+    "Encryption"
+  ],
+  "author": "Teja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uv404/Rigel/issues"
+  },
+  "homepage": "https://github.com/uv404/Rigel#readme",
+  "dependencies": {
+    "electron": "^1.8.1"
+  }
+}

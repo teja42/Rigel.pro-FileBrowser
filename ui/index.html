@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Rigel - Protect your data.</title>
+      <link type="text/css" rel="stylesheet" href="css/main.css"/>
+      <link type="text/css" rel="stylesheet" href="css/ionicons.min.css"/>
+   </head>
+   <body>
+      <section class="side-bar-navigator">
+         <h3>Action Center</h3>
+      </section>
+
+      <section class="main-container">
+         <div class="nav-bar">
+            <i class="ion-arrow-left-a" id="back"></i>
+            <input type="text" id="path" disabled/>
+            <hr/>
+         </div>
+         <div class="loading-spinner">
+            <img src="Spinner.svg" width="80px" height="80px" class="loading"/>
+         </div>
+         <div class="main-content">
+         </div>
+      </section>
+
+   </body>
+</html>
+<script type="x-folder-template">
+   <div class="folder">
+      <i class="ion-folder file-folder-icon folder-icon id-folder"></i><br/>
+      <span class="folder-name">{{name}}</span>
+   </div>
+</script>
+<script type="x-file-template">
+   <div class="file">
+      <i class="ion-document-text file-folder-icon file-icon id-file"></i><br/>
+      <span class="file-name">{{name}}</span>
+   </div>
+</script>
+<script src="js/mustache.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>

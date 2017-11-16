@@ -1,0 +1,131 @@
+@font-face{
+   src: "../fonts/Roboto-Thin.ttf";
+   font-family: "Roboto";
+   font-weight: 200;
+}
+
+*{
+   margin:0;
+   padding: 0;
+   font-family: "Roboto"
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: rgba(38, 38, 38, 0.87);
+}
+
+::-webkit-scrollbar-button{
+   display: none;
+}
+
+::-webkit-scrollbar{
+   width: 6px;
+   transition: opacity 0.3s;
+}
+
+.loading-spinner{
+   width: 300px;
+   height: 300px;
+   /* box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.25); */
+   background-color: rgba(255,255,255,0.5);
+   display: none;
+   position: absolute;
+   top: 20%;
+   left: 40%;
+}
+
+.loading{
+   margin: 35% 40%;
+}
+
+input{
+   border: 0;
+   outline: 0;
+}
+
+.side-bar-navigator{
+   min-width: 15%;
+   width: 200px;
+   float: left;
+   background-color: #2b2b2b;
+   color: white;
+   height: 100vh;
+   position: fixed;
+}
+
+h3{
+   color: white;
+   padding: 5px;
+}
+
+.file-folder-icon{
+   font-size: 70px;
+   transition: color 0.1s;
+   color: #30a0c5;
+}
+
+.file-folder-icon:hover{
+   color:#595959;
+   cursor: pointer;
+}
+
+.file-icon{
+   color: #bbbebf;
+}
+
+.main-container{
+   margin-left:210px;
+}
+
+.folder,.file{
+   width:110px;
+   height: 120px;
+   overflow: hidden;
+   text-align: center;
+   margin: 3px;
+   display: inline-block;
+}
+
+.folder-name,.file-name{
+   max-width: 80px;
+   max-height: 20px;
+   overflow: hidden;
+   overflow-wrap: break-word;
+}
+
+.drop {
+	float: left;
+	border: 1px dashed #888;
+	background: #EEE;
+	text-align: center;
+	padding: 20px;
+	margin: 0 10px 10px 0;
+	}
+.dropped {
+	background-color: #EBC;
+	border-color: #B89;
+	}	
+.active {  
+	background-color: #CEB;
+	border-color: #9B8;
+	}
+.selection {
+   position: absolute;
+   border: 1px solid #89B;
+   background: #BCE;
+   background-color: #BEC;
+   border-color: #8B9;
+}
+
+#back{
+   font-size: 25px;
+   cursor: pointer;
+   color: green;
+}
+
+#path{
+   width: 90%;
+   font-size: 20px;
+   padding: 3px;
+   margin: 1px 0px;
+}
